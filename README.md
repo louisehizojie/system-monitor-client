@@ -1,73 +1,61 @@
-# React + TypeScript + Vite
+# 💻 System Monitor Client (React + Typescript + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fast, minimalist React application for system monitoring, built with **Vite**. Perfect for React newcomers looking for a quick start, modern tooling, and a real-world application structure.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **⚡️ Lightning Fast Development:** Powered by **Vite** for incredibly fast hot module replacement (HMR).
+* **⚛️ Modern React:** Utilizes React's functional components and hooks.
+* **📊 Basic System Metrics:** A simple dashboard layout to display system data (e.g., CPU load, memory usage, network status). *(Note: Integration with a real backend/API would be required for live data).*
+* **💅 Clean Structure:** A clear, easy-to-follow file and component organization.
+* **🛠️ Ready to Deploy:** Simple build process for production.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Getting Started
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Follow these steps to get your copy up and running on your local machine.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Prerequisites
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+You'll need **Node.js** and **npm** (or **yarn** / **pnpm**) installed on your system.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+* **Node.js** (LTS version recommended)
+* **npm** (comes with Node.js)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Installation
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/louisehizojie/system-monitor-client.git](https://github.com/louisehizojie/system-monitor-client.git)
+    cd system-monitor-client
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    # or
+    # yarn install
+    # or
+    # pnpm install
+    ```
+
+### Running the App
+
+Start the development server with Vite. This will open the application in your browser, typically at `http://localhost:5173`.
+
+```bash
+npm run dev
+# or
+# yarn dev
+# or
+# pnpm dev
+ ```
+
+## 📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 👤 Contact
+Louis Ehizojie - https://github.com/louisehizojie
