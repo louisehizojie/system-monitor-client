@@ -1,8 +1,13 @@
 # 💻 System Monitor Client (React + Typescript + Vite)
 
-A fast, minimalist React application for system monitoring, built with **Vite**. Perfect for React newcomers looking for a quick start, modern tooling, and a real-world application structure.
+A fast, minimalist React application for system monitoring, built with **Vite**. Perfect for React newcomers and developers looking for a quick start, modern tooling, and a real-world application structure.
 
+## 🐍 Companion Backend (FastAPI)
+This client is designed to communicate with a REST API to fetch real-time system metrics.
 
+I built a fast, minimalist backend API using FastAPI, which is also key for FastAPI beginners or developers looking for a simple working starting template.
+
+➡️ You can find that project here: [System Monitor API](https://github.com/louisehizojie/system-monitor-api)
 
 ## ✨ Features
 
@@ -58,4 +63,4 @@ npm run dev
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 👤 Contact
-Louis Ehizojie - https://github.com/louisehizojie
+Louis Ehizojie - [Github](https://github.com/louisehizojie)
